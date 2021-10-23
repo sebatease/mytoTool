@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body>header {
+    width: max-content;
+    margin: 100px auto;
+    font-size: xx-large;
+    color: orangered;
+    text-shadow: 2px 2px 5px rebeccapurple;
+}
+
+#connect {
+    width: max-content;
+    padding: 30px 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: solid lightslategray 2px;
+    border-radius: 25px;
+}
+
+#connect > h1 {
+    display: block;
+    margin: 0 auto 30px auto ;
+}
+
+div {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+
+input[type=text] {
+    margin: 5px;
+    width: max-content;
+    height: 25px;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 5px;
+    padding: 10px;
+    color: yellow;
+    background-color: navy;
+    border-radius: 10px;
+}
+
+#tabList {
+    width: 30%;
+    padding: 30px 50px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    border: solid lightslategray 2px;
+    border-radius: 25px;
+}
+
+#tabList  h1 {
+    display: block;
+    margin: 0 auto 10px auto ;
+    border: lightslategray solid 1px;
+}
