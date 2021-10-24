@@ -1,50 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <link rel="shortcut icon" href="./asset/imgs/favicon.png" type="image/png">
+    <title>My ToTool - votre liste</title>
 </head>
 <body>
-    <header>My ToTool</header>
+    <header class="headerList">My ToTool</header> 
     <main id="tabList">
-        <header>
-            <div>
-                <h1>Votre To do list</h1>
-                <p>Nom d'utilisateur</p>
-                <select name="jours" id=""></select>
-                <input type="text" placeholder="Jours">
+        <header class="yourList">
+            <div class="titleList">
+                <h1>Votre liste de taches</h1>
+                <div>
+                    <p>Nom d'utilisateur</p>
+                    <img src="./asset/imgs/blue_bubble.svg" alt="Photo de l'utilisateur" class="imgUser" style="background-image: url(./asset/imgs/usersImg/portraitfille.png);">
+                </div>
             </div>
-            <div>
-                <h2>Nouvelle catégorie</h2>
-                <input type="text" placeholder="Jours">
-                <button>ajouter</button>
+            <div class="searchList">
+                <label for="Jours">Trier : par jour</label>
+                <select name="Jours" id="jours">
+                    <option value="tous">Tous</option>
+                    <option value="lundi">lundi</option>
+                    <option value="mardi">mardi</option>
+                    <option value="mecredi">mecredi</option>
+                    <option value="jeudi">jeudi</option>
+                    <option value="vendredi">vendredi</option>
+                    <option value="samedi">samedi</option>
+                    <option value="dimanche">dimanche</option>
+                </select>
+                <label for="Jours">par catégorie</label>
+                <select name="Jours" id="jours">
+                    <option value="lundi">Toutes</option>
+                    <option value="lundi">catégorie 1</option>
+                    <option value="mardi">catégorie 2</option>
+                </select>
+                <p>Nouvelle catégorie</p>
+                <input type="text">
+                <button>AJOUTER</button>
             </div>
         </header>
-        <div>            
-            <div>
-                <h3>Lundi</h3>
-                <div class="tache">
-                    <div id="urgent"></div><input type="checkbox" name="choice" id=""><p>tache à faire</p><img src="" alt="fait - à faire">
+        <div id="categories">
+            <div class="categorie">
+                <h2>Catégorie 1</h2>
+                <div class="addTask">
+                    <h3>Ajouter une tache</h3>
+                    <div class="addForm">
+                        <select name="urgence" class="urgentF">
+                            <option value="urgent">urgence</option>
+                            <option value="hight">haute</option>
+                            <option value="medium">moyenne</option>
+                            <option value="normal">normale</option>
+                        </select>
+                        <input type="text" name="taskTxt" placeholder="Intitulé de votre tache" class="taskTxt">
+                        <select name="statut" class="statutF">
+                            <option value="status">Statut</option>
+                            <option value="toDo">A faire</option>
+                            <option value="onGoing">En cours</option>
+                            <option value="done">Fait</option>
+                        </select>
+                        <input type="date" name="date" class="dateF">
+                        <input type="button" value="VALIDER">
+                    </div>
+                </div>            
+                <div class="taskLine">
+                    <h3>Lundi</h3>
+                    <div class="task">
+                        <div class="urgent">image</div>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <div>statut</div>
+                        <div>date</div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="taskLine">
+                    <h3>Mardi</h3>
+                    <div class="task">
+                        <div class="urgent">image</div>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <div>statut</div>
+                        <div>date</div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="taskLine">
+                    <h3>Mercredi</h3>
+                    <div class="task">
+                        <div class="urgent">image</div>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <div>statut</div>
+                        <div>date</div>
+                    </div>
+                    <hr>
                 </div>
             </div>
-            <hr>
-            <div>
-                <h3>Mardi</h3>
-                <div class="tache">
-                    <div id="urgent"></div><input type="checkbox" name="choice" id=""><p>tache à faire</p><img src="" alt="fait - à faire">
+            <div class="categorie">
+                <h2>Catégorie 2</h2>
+                <div class="addTask">
+                    <h3>Ajouter une tache</h3>
+                    <div class="addForm">
+                        <select name="urgence" class="urgentF">
+                            <option value="urgent">urgence</option>
+                            <option value="hight">haute</option>
+                            <option value="medium">moyenne</option>
+                            <option value="normal">normale</option>
+                        </select>
+                        <input type="text" name="taskTxt" placeholder="Intitulé de votre tache" class="taskTxt">
+                        <select name="statut" class="statutF">
+                            <option value="status">Statut</option>
+                            <option value="toDo">A faire</option>
+                            <option value="onGoing">En cours</option>
+                            <option value="done">Fait</option>
+                        </select>
+                        <input type="date" name="date" class="dateF">
+                        <input type="button" value="VALIDER">
+                    </div>
+                </div>            
+                <div class="taskLine">
+                    <h3>Lundi</h3>
+                    <div class="task">
+                        <div class="urgent">image</div>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <div>statut</div>
+                        <div>date</div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="taskLine">
+                    <h3>Mardi</h3>
+                    <div class="task">
+                        <div class="urgent">image</div>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <div>statut</div>
+                        <div>date</div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="taskLine">
+                    <h3>Mercredi</h3>
+                    <div class="task">
+                        <div class="urgent">image</div>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <div>statut</div>
+                        <div>date</div>
+                    </div>
+                    <hr>
                 </div>
             </div>
-            <hr>
-            <div>
-                <h3>Mercredi</h3>
-                <div class="tache">
-                    <div id="urgent"></div><input type="checkbox" name="choice" id=""><p>tache à faire</p><img src="" alt="fait - à faire">
-                </div>
-            </div>
-            <hr> 
+             
         </div>
     </main>
 
