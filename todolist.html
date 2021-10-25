@@ -20,19 +20,16 @@
                 </div>
             </div>
             <div class="searchList">
-                <label for="Jours">Trier : par jour</label>
-                <select name="Jours" id="jours">
-                    <option value="tous">Tous</option>
-                    <option value="lundi">lundi</option>
-                    <option value="mardi">mardi</option>
-                    <option value="mecredi">mecredi</option>
-                    <option value="jeudi">jeudi</option>
-                    <option value="vendredi">vendredi</option>
-                    <option value="samedi">samedi</option>
-                    <option value="dimanche">dimanche</option>
+                
+                <label for="searchUrge">Trier : par urgence</label>
+                <select name="searchUrge" id="searchUrge">
+                    <option value="tous">---</option>
+                    <option value="hight">haute</option>
+                    <option value="medium">moyenne</option>
+                    <option value="normal">normale</option>
                 </select>
-                <label for="Jours">par catégorie</label>
-                <select name="Jours" id="jours">
+                <label for="searchCat">par catégorie</label>
+                <select name="searchCat" id="searchCat">
                     <option value="lundi">Toutes</option>
                     <option value="lundi">catégorie 1</option>
                     <option value="mardi">catégorie 2</option>
@@ -54,46 +51,46 @@
                             <option value="medium">moyenne</option>
                             <option value="normal">normale</option>
                         </select>
-                        <input type="text" name="taskTxt" placeholder="Intitulé de votre tache" class="taskTxt">
-                        <select name="statut" class="statutF">
-                            <option value="status">Statut</option>
-                            <option value="toDo">A faire</option>
-                            <option value="onGoing">En cours</option>
-                            <option value="done">Fait</option>
-                        </select>
+                        <input type="text" name="taskTxt" placeholder="Intitulé de votre tache" class="taskTxtF">
                         <input type="date" name="date" class="dateF">
                         <input type="button" value="VALIDER">
                     </div>
                 </div>            
-                <div class="taskLine">
-                    <h3>Lundi</h3>
+                <div class="taskLine none">
                     <div class="task">
-                        <div class="urgent">image</div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                        <div>statut</div>
-                        <div>date</div>
+                        <div class="urgent red"></div>
+                        <div class="taskTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <select name="statutTaskNum" class="statutF">
+                            <option value="toDo">A faire</option>
+                            <option value="onGoing">En cours</option>
+                            <option value="done">Fait</option>
+                        </select>
+                        <div>pour le 10/11/2021</div>
                     </div>
-                    <hr>
                 </div>
-                <div class="taskLine">
-                    <h3>Mardi</h3>
+                <div class="taskLine none">
                     <div class="task">
-                        <div class="urgent">image</div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                        <div>statut</div>
-                        <div>date</div>
+                        <div class="urgent orange"></div>
+                        <div class="taskTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <select name="statutTaskNum" class="statutF">
+                            <option value="toDo">A faire</option>
+                            <option value="onGoing">En cours</option>
+                            <option value="done">Fait</option>
+                        </select>
+                        <div>pour le 10/11/2021</div>
                     </div>
-                    <hr>
                 </div>
-                <div class="taskLine">
-                    <h3>Mercredi</h3>
+                <div class="taskLine none">
                     <div class="task">
-                        <div class="urgent">image</div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                        <div>statut</div>
-                        <div>date</div>
+                        <div class="urgent purple"></div>
+                        <div class="taskTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <select name="statutTaskNum" class="statutF">
+                            <option value="toDo">A faire</option>
+                            <option value="onGoing">En cours</option>
+                            <option value="done">Fait</option>
+                        </select>
+                        <div>pour le 10/11/2021</div>
                     </div>
-                    <hr>
                 </div>
             </div>
             <div class="categorie">
@@ -107,47 +104,47 @@
                             <option value="medium">moyenne</option>
                             <option value="normal">normale</option>
                         </select>
-                        <input type="text" name="taskTxt" placeholder="Intitulé de votre tache" class="taskTxt">
-                        <select name="statut" class="statutF">
-                            <option value="status">Statut</option>
-                            <option value="toDo">A faire</option>
-                            <option value="onGoing">En cours</option>
-                            <option value="done">Fait</option>
-                        </select>
+                        <input type="text" name="taskTxt" placeholder="Intitulé de votre tache" class="taskTxtF">
                         <input type="date" name="date" class="dateF">
                         <input type="button" value="VALIDER">
                     </div>
                 </div>            
-                <div class="taskLine">
-                    <h3>Lundi</h3>
+                <div class="taskLine none">
                     <div class="task">
-                        <div class="urgent">image</div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                        <div>statut</div>
-                        <div>date</div>
+                        <div class="urgent red"></div>
+                        <div class="taskTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <select name="statutTaskNum" class="statutF">
+                            <option value="toDo">A faire</option>
+                            <option value="onGoing">En cours</option>
+                            <option value="done">Fait</option>
+                        </select>
+                        <div>pour le 10/11/2021</div>
                     </div>
-                    <hr>
                 </div>
-                <div class="taskLine">
-                    <h3>Mardi</h3>
+                <div class="taskLine none">
                     <div class="task">
-                        <div class="urgent">image</div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                        <div>statut</div>
-                        <div>date</div>
+                        <div class="urgent orange"></div>
+                        <div class="taskTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <select name="statutTaskNum" class="statutF">
+                            <option value="toDo">A faire</option>
+                            <option value="onGoing">En cours</option>
+                            <option value="done">Fait</option>
+                        </select>
+                        <div>pour le 10/11/2021</div>
                     </div>
-                    <hr>
                 </div>
-                <div class="taskLine">
-                    <h3>Mercredi</h3>
+                <div class="taskLine done">
                     <div class="task">
-                        <div class="urgent">image</div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                        <div>statut</div>
-                        <div>date</div>
+                        <div class="urgent purple"></div>
+                        <div class="taskTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <select name="statutTaskNum" class="statutF">
+                            <option value="done">Fait</option>
+                        </select>
+                        <div>pour le 10/11/2021</div>
                     </div>
-                    <hr>
                 </div>
+            </div>
+                
             </div>
              
         </div>
