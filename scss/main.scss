@@ -26,12 +26,12 @@ h1 {
 .done {
     background-color: $blueTrans;
 }
-.none {
-    background: none;
+.yellow {
+    background-color: $yellowLight;
 }
 body {
     background-color: $blueLight;
-    background-image: url(./imgs/bubbles_bg.svg);
+    background-image: url(../imgs/bubbles_bg.svg);
     background-repeat: repeat-y;
     background-size: cover;
 
@@ -63,10 +63,11 @@ body {
     flex-direction: column;
     border-radius: 50%;
     background-color: $blue;
-    background-image: url(./imgs/bubble.svg);
+    background-image: url(../imgs/bubble.svg);
     background-repeat: no-repeat;
     background-size: cover;
     h1 {
+        font-size: 1rem;
         padding: 0.5vw;
         background-color: $blueTrans;
         color: black;
@@ -84,7 +85,7 @@ body {
     
     input[type=text] {
         margin: 0.2vw;
-        width: max-content;
+        width: 9.5vw; 
         padding: 0.2vw;
         height: 1.2vw;
         border: none;
@@ -107,7 +108,6 @@ body {
 .imgUser {
     width: 5vw;
     border-radius: 50%;
-    margin: 0.5vw 1vw 0.5vw 1vw;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -115,117 +115,221 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     width: 65vw;
     margin: auto;
-    background-color: white;
-    border-radius: 1vw;
+    background-color: none;
 
     .yourList {
-        border-radius: 1vw 1vw 0 0;
-        background-color: $blue;
         .titleList {
-            justify-content: space-between;
-            align-items: center;
-            div {
+            justify-content: space-evenly;
+            h1 {
+                font-family: 'Gluten', cursive;
+                color: $blue;
+                width: 6.5vw;
+                height: 6.5vw;
+                padding: 1vw;
+                border-radius: 50%;
+                display: flex;
+                text-align: center;
                 align-items: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: $bluehighlight;
+                background-image: url(../imgs/bubble.svg);
+            }
+            div {
+                font-family: 'Gluten', cursive;
+                color: $redbright;
+                width: 6vw;
+                height: 6vw;
+                margin-top: 2vw;
+                padding: 2.3vw;
+                border-radius: 50%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: $blueLight;
+                background-image: url(../imgs/bubble.svg);
             }
             p {
                 font-size: 1rem;
                 font-weight: bold;
             }
-            h1 {
-                padding-left: 2vw;
-                color: $yellowLight;
-            }
         }
         .searchList {
-            padding: 0.5vw 1vw 1vw 1vw;
-            
-            label {
-                font-size: 0.9rem;
-                padding: 0 0.4vw 0 0;
-            }
-            input[type=text], select {
-                font-size: 0.8rem;
-                padding: 0 0.4vw;
-                resize: vertical;
-                border: none;
-                
-            }
-            select {
-                margin-right: 0.5vw;
-            }
-            p {
-                font-size: 0.9rem;
-                padding: 0 0.5vw;
-            }
-            button {
-                font-size: 0.7rem;
-                margin: 0;
-                padding: 0 0.3vw;
-                color: black;
-                background-color: $greenLight;
-                border: none;
-                border-radius: 0 0.3vw 0.3vw 0;
-                cursor: pointer;
-                &:hover {
-                    background-color: $green;
-                }
-            }
-        }
-        div {
+            font-weight: bold;
             display: flex;
-            color: white;
-        }
-    }
-
-    #categories {
-        padding: 0 0 1vw 0;
-        .categorie {
-            padding: 0 0 1vw 0;
-            h2 {
-                font-size: 1rem;
-                color:white;
-                padding: 1vw 1vw;
-                background-color: $blueLight;
-            }
-            .addTask {
-                background-color: $bluehighlight;
-                padding: 0.3vw 0;
-                h3 {
-                    font-size: 0.9rem;
-                    color:$blue;
-                    padding: 0.7vw 1.1vw;
-                }
-                .addForm {
-                    display: flex;
-                    margin: 0 0 0.3vw 0;
-                    padding: 0 1vw 0.2vw 1vw;
-                    justify-content: space-evenly;
-                    input[type=text], input[type=date], select {
+            flex-direction: row-reverse;
+            .sort {
+                color: white;
+                padding: 1vw;
+                width: 7vw;
+                height: 7vw;
+                padding: 3vw;
+                margin-right: 15vw;
+                border-radius: 50%;
+                flex-direction: column;
+                justify-content: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: $blue;
+                background-image: url(../imgs/bubble.svg);
+                    label {
+                        font-size: 0.9rem;
+                        padding: 0.5vw 0;
+                    }
+                    select {
                         font-size: 0.8rem;
                         padding: 0 0.4vw;
                         resize: vertical;
                         border: none;
-                        
+                        border-radius: 0.5vw;     
+                    }
+            }            
+            .addCat {
+                color: white;
+                padding: 1vw;
+                margin: 4vw 0vw 0 0;
+                width: 6vw;
+                height: 6vw;
+                padding: 2vw;
+                border-radius: 50%;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: $blue;
+                background-image: url(../imgs/bubble.svg);
+                    p {
+                        font-size: 0.9rem;
+                        padding: 0.5vw 0;
                     }
                     input[type=text] {
-                        width: 40vw;
+                        font-size: 0.8rem;
+                        padding: 0 0.4vw;
+                        resize: vertical;
+                        border: none;
+                        border-radius: 0.5vw;
                     }
-                    input[type=button] {
-                        padding: 0 0.5vw;
+                    button {
                         font-size: 0.7rem;
                         font-weight: bold;
+                        margin: 0.2vw 0;
+                        padding: 0.3vw 0.2vw;
+                        color: white;
+                        background-color: $orange;
                         border: none;
-                        border-radius: 0.3vw;
-                        background-color: $greenLight;
-                        &:hover {
-                            background-color: $green;
+                        border-radius: 0.5vw;
+                        cursor: pointer;
+                            &:hover {
+                            background-color: $yellow;        
+                    }
+                }
+            
+            }
+        }
+        div {
+            display: flex;
+        }
+    }
+
+    #categories {
+        .categorie {
+            padding: 0 0 1vw 0;
+            header {
+                display: flex;
+                // justify-content: center;
+                align-items: center;
+            }
+            h2 {
+                font-size: 1rem;
+                color:$blue;
+                width: 6vw;
+                height: 6vw;
+                margin-top: 3vw;
+                padding: 1vw;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: $greenLight;
+                background-image: url(../imgs/bubble.svg);
+            }
+            .addTask {
+                width: 18vw;
+                height: 18vw;
+                background-color: $bluehighlight;
+                display: flex;
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url(../imgs/bubble.svg);
+                h3 {
+                    font-size: 0.9rem;
+                    color:$blue;
+                    width: 5vw;
+                    height: 5vw;
+                    margin-top: 2.5vw;
+                    padding: 0.5vw;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: $yellow;
+                    background-image: url(../imgs/bubble.svg);
+                }
+                .addForm {
+                    font-size: 0.9rem;
+                    color:$blue;
+                    width: 10vw;
+                    height: 10vw;
+                    margin-top: 5vw;
+                    padding: 1vw;
+                    border-radius: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: $blueLight;
+                    background-image: url(../imgs/bubble.svg);
+                    input[type=text], input[type=date], select {
+                        font-size: 0.8rem;
+                        margin: 0.4vw 0;
+                        padding: 0.1vw 0.4vw;
+                        resize: vertical;
+                        border: none;
+                        border-radius: 0.4vw;   
+                    }
+                    input[type=button] {
+                        font-size: 0.7rem;
+                        font-weight: bold;
+                        margin: 0.2vw 0;
+                        padding: 0.3vw 0.5vw;
+                        color: white;
+                        background-color: $orange;
+                        border: none;
+                        border-radius: 0.5vw;
+                        cursor: pointer;
+                            &:hover {
+                            background-color: $yellow;
                         }
                     }
                 }
             }
             .taskLine {
                 color: $blue;
-                padding: 1vw 1.1vw;
+                padding: 1vw 1.1vw;                
+                border-radius: 2vw;
+                margin: 0.5vw 0;
                 h3 {
                     font-size: 0.8rem;
                     color: $blue;
@@ -236,12 +340,13 @@ body {
                     display: flex;
                     justify-content: space-evenly;
                     justify-items: center;
+                    border: none;
                     
                     .urgent {
                         width: 1vw;
                         height: 1vw;
                         border-radius: 50%;
-                        background-image: url(./imgs/blue_bubble.svg);
+                        background-image: url(../imgs/bubble.svg);
                         background-repeat: no-repeat;
                         background-size: cover;  
                     }
@@ -251,6 +356,7 @@ body {
                     select {
                         padding: 0 0.5vw;
                         font-size: 0.7rem;
+                        width: 6vw;
                         background-color: $greenLight;
                         border: none;
                         border-radius: 0.3vw;
