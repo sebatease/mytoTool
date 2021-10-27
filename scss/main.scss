@@ -62,7 +62,7 @@ body {
     align-items: center;
     flex-direction: column;
     border-radius: 50%;
-    background-color: $blue;
+    background-color: $blue_t;
     background-image: url(../imgs/bubble.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,6 +118,9 @@ body {
     background-color: none;
 
     .yourList {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
         .titleList {
             justify-content: space-evenly;
             h1 {
@@ -132,7 +135,7 @@ body {
                 align-items: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-color: $bluehighlight;
+                background-color: $bluehighlight_t;
                 background-image: url(../imgs/bubble.svg);
             }
             div {
@@ -148,7 +151,7 @@ body {
                 align-items: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-color: $blueLight;
+                background-color: $blueLight_t;
                 background-image: url(../imgs/bubble.svg);
             }
             p {
@@ -162,6 +165,7 @@ body {
             flex-direction: row-reverse;
             .sort {
                 color: white;
+                text-shadow: 2px 2px 1px $blue;
                 padding: 1vw;
                 width: 7vw;
                 height: 7vw;
@@ -172,7 +176,7 @@ body {
                 justify-content: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-color: $blue;
+                background-color: $blue_t;
                 background-image: url(../imgs/bubble.svg);
                     label {
                         font-size: 0.9rem;
@@ -186,8 +190,9 @@ body {
                         border-radius: 0.5vw;     
                     }
             }            
-            .addCat {
+            .addCat {  
                 color: white;
+                text-shadow: 2px -2px 1px $blue;
                 padding: 1vw;
                 margin: 4vw 0vw 0 0;
                 width: 6vw;
@@ -199,7 +204,7 @@ body {
                 text-align: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-color: $blue;
+                background-color: $blue_t;
                 background-image: url(../imgs/bubble.svg);
                     p {
                         font-size: 0.9rem;
@@ -256,13 +261,13 @@ body {
                 text-align: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-color: $greenLight;
+                background-color: $greenLight_t;
                 background-image: url(../imgs/bubble.svg);
             }
             .addTask {
                 width: 18vw;
                 height: 18vw;
-                background-color: $bluehighlight;
+                background-color: $bluehighlight_t;
                 display: flex;
                 border-radius: 50%;
                 background-repeat: no-repeat;
@@ -282,7 +287,7 @@ body {
                     text-align: center;
                     background-repeat: no-repeat;
                     background-size: cover;
-                    background-color: $yellow;
+                    background-color: $yellow_t;
                     background-image: url(../imgs/bubble.svg);
                 }
                 .addForm {
@@ -299,7 +304,7 @@ body {
                     align-items: center;
                     background-repeat: no-repeat;
                     background-size: cover;
-                    background-color: $blueLight;
+                    background-color: $blueLight_t;
                     background-image: url(../imgs/bubble.svg);
                     input[type=text], input[type=date], select {
                         font-size: 0.8rem;
