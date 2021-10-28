@@ -1,0 +1,177 @@
+@media screen and (orientation: portrait) 
+{
+
+    html {
+        font-size: 4vw;
+    }
+
+    body {
+
+        .headerLog {
+            text-shadow: 2px 2px 0.05vw $blue;
+        }
+        .headerList {
+            margin: 4vw auto;
+            text-shadow: 2px 2px 0.05vw $blue;
+        }
+    }
+    #connect {
+        height: 60vw;
+        width: 60vw;
+        h1 {
+            padding: 2vw;
+            margin: 2vw auto ;
+            border-radius: 2.4vw;
+            
+        }
+        div {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        input[type=text] {
+            margin: 0.8vw;
+            width: 38vw; 
+            padding: 0.8vw;
+            height: 4vw;
+        }
+        button {
+            width: 40vw;
+            margin: 0.8vw;
+            padding: 1.2vw;
+            border-radius: 2.4vw;
+        }
+    }
+    .imgUser {
+        width: 15vw;
+    }
+    #tabList {
+        width: 98%;
+
+        .yourList {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            .titleList {
+                h1 {
+                    width: 24vw;
+                    height: 24vw;
+                    padding: 1vw;
+                }
+                div {
+                    width: 24vw;
+                    height: 24vw;
+                    margin-top: 0;
+                    padding: 4vw;
+                }
+            }
+            .searchList {
+                .sort {
+                    text-shadow: 1px 1px 1px $blue;
+                    padding: 4vw;
+                    width: 28vw;
+                    height: 28vw;
+                    padding: 6vw;
+                    margin-right: 2vw;
+                        label {
+                            padding: 1vw 0;
+                        }
+                        select {
+                            padding: 0 1vw;
+                            border-radius: 1vw;     
+                        }
+                }            
+                .addCat 
+                {  
+                    text-shadow: 1px -1px 1px $blue;
+                    padding: 4vw;
+                    margin: 0;
+                    width: 24vw;
+                    height: 24vw;
+                    padding: 4.5vw;
+                        p {
+                            padding: 1vw 0;
+                        }
+                        input[type=text] {
+                            padding: 0;
+                            border-radius: 1vw;
+                        }
+                        button {
+                            margin: 0.8vw 0;
+                            padding: 0.3vw 0.2vw;
+                            border-radius: 1vw;        
+                        }
+                }
+                
+            }
+        }
+    
+
+        #categories {
+            .categorie {
+                padding: 0 0 1vw 0;
+                header {
+                    display: flex;
+                    align-items: center;
+                }
+                h2 {
+                    width: 22vw;
+                    height: 22vw;
+                    margin-top: 12vw;
+                    padding: 2vw;
+                }
+                .addTask {
+                    width: 70vw;
+                    height: 70vw;
+                    h3 {
+                        width: 20vw;
+                        height: 20vw;
+                        margin-top: 20vw;
+                        padding: 1.5vw;
+                    }
+                    .addForm {
+                        width: 40vw;
+                        height: 40vw;
+                        margin-top: 20vw;
+                        padding: 3vw;
+                        input[type=text], input[type=date], select {
+                            width:35vw;
+                            margin: 1vw 0;
+                            padding: 0.4vw 1.6vw;
+                            border-radius: 1.6vw;   
+                        }
+                        input[type=button] {
+                            margin: 0.8vw 0;
+                            padding: 1.2vw 2vw;
+                            border-radius: 2vw;
+                        }
+                    }
+                }
+                .taskLine {
+                    padding: 3vw 1vw;                
+                    border-radius: 8vw;
+                    margin: 1.5vw 0;
+                    .task {
+                        padding: 0.5vw 0;
+                        .urgent {
+                            margin: 1vw;
+                            width: 4vw;
+                            height: 4vw;  
+                        }
+                        .taskTxt {
+                            width: 45vw;
+                        }
+                        select {
+                            margin: 0 1vw;
+                            padding: 0 0.5vw;
+                            width: 18vw;
+                            border-radius: 2vw;
+                        }
+                    }
+                }    
+            }
+        }    
+    }
+}
